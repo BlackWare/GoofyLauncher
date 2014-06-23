@@ -1,0 +1,55 @@
+# depslib dependency file v1.0
+1403390657 source:c:\users\black_ware\desktop\sdl\login\main.cpp
+	<iostream>
+	<stdio.h>
+	"login.cpp"
+
+1403393244 c:\users\black_ware\desktop\sdl\login\login.cpp
+	<stdio.h>
+	<iostream>
+	<Windows.h>
+	<WinInet.h>
+	<boost/asio.hpp>
+	<conio.h>
+	<fstream>
+
+1403391682 c:\users\black_ware\desktop\sdl\login\include\urlmon.h
+	"rpc.h"
+	"rpcndr.h"
+	"windows.h"
+	"ole2.h"
+	"objidl.h"
+	"oleidl.h"
+	"servprov.h"
+	"msxml.h"
+
+1403391763 c:\users\black_ware\desktop\sdl\login\include\msxml.h
+	"rpc.h"
+	"rpcndr.h"
+	"unknwn.h"
+	"objidl.h"
+	"oaidl.h"
+
+1403392832 c:\users\black_ware\desktop\sdl\login\/include\stdafx.h
+	"targetver.h"
+	<afxwin.h>
+	<afxext.h>
+	<afxole.h>
+	<afxodlgs.h>
+	<afxdisp.h>
+	<afxdb.h>
+	<afxdao.h>
+	<afxdtctl.h>
+	<afxcmn.h>
+
+1403393014 c:\users\black_ware\desktop\sdl\login\include\stdafx.h
+	<afxwin.h>
+	<afxext.h>
+	<afxole.h>
+	<afxodlgs.h>
+	<afxdisp.h>
+	<afxdb.h>
+	<afxdao.h>
+	<afxdtctl.h>
+	<afxcmn.h>
+
