@@ -3,24 +3,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <QProcess>
+#include <QDebug>
 
 
-QString launch(FILE *library, char *tocken, char *user, char *mcdir)
+QString launch(FILE *library, char *tocken, char *user, QString *mcdir, int RAM)
 {
     rewind(library);
     QString lib = "";
-    char line[10000] = "";
+    char line[150] = "";
     if (library != NULL)
     {
-        while ("fgets(line,10000,library") {
+        while (fgets(line,150,library) != NULL ) {
             lib += line;
+            qDebug() << "check : REad line !";
         }
 
     }
     else if (library == NULL) {
-        lib = "Problem";
+        qDebug() << "Problem , File not found !";
     }
-    QProcess::startDetached("cmd.exe", QStringList()<< "cd " << QString(mcdir));
+    QProcess::setWorkingDirectory(mcdir);
+    QProcess::startDetached("shutdown -i",QStringList()<< " " << "set MCDIR=" << QString(mcdir));
+
     return lib;
 
 }

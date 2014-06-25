@@ -9,30 +9,17 @@
 int main(int argc, char *argv[])
 {
 
+    int RAM = 1000; // En MegaOctets
     FILE* fichier = NULL;
-    fichier = fopen("libjava","r");
+    fichier = fopen("libjava.set","r");
     char tocken[] = "";
     char user[] = "";
-    char mcdir[] = "%appdata%\\.goofy";
-    QString file = launch(fichier,tocken,user,mcdir);
+    QString mcdir[] = "%appdata%\\.goofy";
+    QString file = launch(fichier,tocken,user,mcdir,RAM);
 
-    if (fichier == NULL) {
-        file = "wut ?";
-    }
     QApplication app(argc, argv);
-
-
-//    MainWindow w;
-
-    QString value = "<Voilà !> ";
-    value += "3 ";
-    value += "petits pains.";
-
-//    QPushButton *bouton = new QPushButton("Salut, la forme ? ");
     QTextBrowser *text = new QTextBrowser();
     text->setText(file);
-//    bouton->setText(value);
-//    bouton->show();
     text->show();
     return app.exec();
 }
