@@ -4,7 +4,6 @@
 #include <QUrlQuery>
 #include <QDebug>
 #include <QMainWindow>
-#include
 
 
 class QNetworkReply;
@@ -43,7 +42,7 @@ void replyFinished(QNetworkReply *reply);
     QNetworkReply *reply = nwam->post(request,data);
 
         return reply;
-} */
+}   */
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent)
 {
@@ -71,3 +70,4 @@ void MainWindow::replyFinished(QNetworkReply *reply)
 {
 qDebug() << "ok!";
 }
+

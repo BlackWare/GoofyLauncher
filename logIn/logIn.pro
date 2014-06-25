@@ -3,4 +3,5 @@ QT += network
 
 SOURCES += \
     main.cpp \
-    login.cpp
+    login.cpp \
+    launch.cpp
